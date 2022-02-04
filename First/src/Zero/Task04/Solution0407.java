@@ -1,6 +1,7 @@
 package Zero.Task04;
 
 // Вывести на экран сумму чисел от 1 до 100 включительно, не кратных 3. Для этого используй цикл while.
+
 public class Solution0407 {
     public static void main(String[] args) {
         int count = 1;
