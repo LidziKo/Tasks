@@ -1,33 +1,27 @@
 package Zero.Task04;
+import java.util.Scanner;
 
-/*Используя вложенные циклы while (цикл в цикле) выведи на экран незаполненный прямоугольник (его контур)
-        размером 10 (высота height) на 20 (ширина width) из букв 'Б'.
-        Незаполненная часть состоит из пробелов.*/
+/*
+В методе main с клавиатуры считывается 3 целых числа: start, end (start <= end), multiple.
+        Допиши программу, чтобы на экран выводилась сумма чисел от start (включительно) до end (не включительно), кратных multiple.
+        чтобы перейти к следующей итерации цикла, используй оператор continue.
+*/
+
 
 public class Solution0405 {
     public static void main(String[] args) {
-        int height = 1;
+        Scanner scanner = new Scanner(System.in);
+        int start = scanner.nextInt();
+        int end = scanner.nextInt();
+        int multiple = scanner.nextInt();
+        int sum = 0;
 
-        while (height <= 10) {
-            int width = 1;
-            while (width <= 20) {
-                if ((height == 1) || (height == 10)) {
-                    System.out.print("Б");
-                    }
-                else {
-                    if ((width == 1) || (width == 20)) {
-                        System.out.print("Б");
-                    }
-                    else {
-                        System.out.print(" ");
-                    }
-                }
-                width++;
+        for (int i = start; i < end; i++) {
+            if (i % multiple != 0) {
+                continue;
             }
-            System.out.println();
-            height++;
-
+            sum += i;
         }
-
+        System.out.println(sum);
     }
 }

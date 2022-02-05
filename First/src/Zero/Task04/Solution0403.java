@@ -1,29 +1,21 @@
 package Zero.Task04;
 import java.util.Scanner;
 
-/*
-Напишем программу, в которой нужно вводить с клавиатуры целые числа и считать их сумму, пока пользователь не введет слово "ENTER".
-        Вывести на экран полученную сумму и завершить программу.
-*/
+/*Программа должна считывать целые числа с клавиатуры до тех пор, пока не будет введено что-то другое: например, строка или символ.
+        Выведи на экран минимальное число из введенных. Если введено несколько таких чисел, необходимо вывести любое из них.*/
+
 public class Solution0403 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int min = Integer.MAX_VALUE;
 
-        int sum = 0;
-        boolean exit = false;
-
-        while (!exit) {
-            if (scanner.hasNextInt()) {
-                int number = scanner.nextInt();
-                sum += number;
-            }
-            else if (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                if (line.equalsIgnoreCase("ENTER")) {
-                    exit = true;
-                    System.out.println(sum);
-                }
+        while (scanner.hasNextInt()) {
+            int nextInt = scanner.nextInt();
+            if (nextInt < min) {
+                min = nextInt;
             }
         }
+        System.out.println(min);
     }
 }
+

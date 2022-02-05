@@ -1,20 +1,20 @@
 package Zero.Task04;
 import java.util.Scanner;
 
-/*Ввести с клавиатуры имя и, используя цикл while, 10 раз вывести: <имя> любит меня (переменная text).
-        Каждый вывод - с новой строки.*/
+/*Программа должна считывать целые числа с клавиатуры до тех пор, пока не будет введено что-то другое: например, строка или символ.
+        Выведи на экран максимальное четное число из введенных. Если введено несколько таких чисел, необходимо вывести любое из них.*/
 
 public class Solution0402 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int max = Integer.MIN_VALUE;
 
-        String text = " любит меня.";
-        String result = scanner.nextLine() + text;
-        int i = 1;
-
-        while (i <= 10) {
-            System.out.println(result);
-            i++;
+        while (scanner.hasNextInt()) {
+            int inputInt = scanner.nextInt();
+            if ((inputInt % 2 == 0) && (inputInt > max)) {
+                max = inputInt;
+            }
         }
+        System.out.println(max);
     }
 }

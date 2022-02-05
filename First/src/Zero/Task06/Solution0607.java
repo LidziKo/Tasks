@@ -1,4 +1,4 @@
-package Zero.Task04;
+package Zero.Task06;
 import java.util.Scanner;
 
 /*
@@ -10,7 +10,7 @@ import java.util.Scanner;
         Минимальных чисел тоже может быть несколько.
 */
 
-public class Solution0410 {
+public class Solution0607 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

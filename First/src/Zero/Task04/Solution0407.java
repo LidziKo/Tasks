@@ -1,22 +1,23 @@
 package Zero.Task04;
+import java.util.Scanner;
 
-// Вывести на экран сумму чисел от 1 до 100 включительно, не кратных 3. Для этого используй цикл while.
+/*Ввести с клавиатуры строку и число number, которое больше 0 и меньше 5.
+        Вывести на экран строку number раз с помощью цикла do-while. Каждое значение нужно вывести с новой строки.
+        Если число number меньше/равно 0 или больше/равно 5, то введенную строку нужно вывести на экран один раз.*/
 
 public class Solution0407 {
     public static void main(String[] args) {
-        int count = 1;
-        int sum = 0;
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        int count = scanner.nextInt();
 
-        while (count <= 100) {
-            if (count % 3 == 0) {
-                count++;
-                continue;
+        do {
+            System.out.println(s);
+            if ((count <= 0) || (count >= 5)) {
+                break;
             }
-            else {
-                sum += count;
-            }
-            count++;
+            count--;
         }
-        System.out.println(sum);
+        while (count > 0);
     }
 }

@@ -1,20 +1,16 @@
 package Zero.Task04;
 
-/*Используя вложенные циклы while (цикл в цикле)
-    выведи на экран прямоугольник размером 5 (высота) на 10 (ширина), заполненный буквой 'Q'.*/
+/*
+Напиши программу, в которой с помощью цикла for на экран будут выведены чётные числа от 1 до 15.
+        Каждое значение нужно выводить с новой строки.
+*/
 
 public class Solution0404 {
     public static void main(String[] args) {
-        int wight = 1;
-
-        while (wight <= 5) {
-            int length = 1;
-            while (length <= 10) {
-                System.out.print("Q");
-                length++;
+        for (int i = 1; i <= 15; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
             }
-            wight++;
-            System.out.println();
         }
     }
 }
