@@ -1,16 +1,33 @@
 package Zero.Task04;
 
-/*
-Напиши программу, в которой с помощью цикла for на экран будут выведены чётные числа от 1 до 15.
-        Каждое значение нужно выводить с новой строки.
-*/
+/*Используя вложенные циклы while (цикл в цикле) выведи на экран незаполненный прямоугольник (его контур)
+        размером 10 (высота height) на 20 (ширина width) из букв 'Б'.
+        Незаполненная часть состоит из пробелов.*/
 
 public class Solution0404 {
     public static void main(String[] args) {
-        for (int i = 1; i <= 15; i++) {
-            if (i % 2 == 0) {
-                System.out.println(i);
+        int height = 1;
+
+        while (height <= 10) {
+            int width = 1;
+            while (width <= 20) {
+                if ((height == 1) || (height == 10)) {
+                    System.out.print("Б");
+                    }
+                else {
+                    if ((width == 1) || (width == 20)) {
+                        System.out.print("Б");
+                    }
+                    else {
+                        System.out.print(" ");
+                    }
+                }
+                width++;
             }
+            System.out.println();
+            height++;
+
         }
+
     }
 }

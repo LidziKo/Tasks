@@ -1,21 +1,20 @@
 package Zero.Task04;
-import java.util.Scanner;
 
-/*Программа должна считывать целые числа с клавиатуры до тех пор, пока не будет введено что-то другое: например, строка или символ.
-        Выведи на экран минимальное число из введенных. Если введено несколько таких чисел, необходимо вывести любое из них.*/
+/*Используя вложенные циклы while (цикл в цикле)
+    выведи на экран прямоугольник размером 5 (высота) на 10 (ширина), заполненный буквой 'Q'.*/
 
 public class Solution0403 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int min = Integer.MAX_VALUE;
+        int wight = 1;
 
-        while (scanner.hasNextInt()) {
-            int nextInt = scanner.nextInt();
-            if (nextInt < min) {
-                min = nextInt;
+        while (wight <= 5) {
+            int length = 1;
+            while (length <= 10) {
+                System.out.print("Q");
+                length++;
             }
+            wight++;
+            System.out.println();
         }
-        System.out.println(min);
     }
 }
-

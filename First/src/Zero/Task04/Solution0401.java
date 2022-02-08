@@ -1,17 +1,29 @@
 package Zero.Task04;
+import java.util.Scanner;
 
-/*Используя цикл while вывести на экран сто раз цитату (переменная quote):
-        «Я никогда не буду работать за копейки»
-
-        Каждое значение вывести с новой строки.*/
-
+/*
+Напишем программу, в которой нужно вводить с клавиатуры целые числа и считать их сумму, пока пользователь не введет слово "ENTER".
+        Вывести на экран полученную сумму и завершить программу.
+*/
 public class Solution0401 {
     public static void main(String[] args) {
-        String quote = "Я никогда не буду работать за копейки";
-        int i = 0;
-        while (i < 100) {
-            System.out.println(quote);
-            i++;
+        Scanner scanner = new Scanner(System.in);
+
+        int sum = 0;
+        boolean exit = false;
+
+        while (!exit) {
+            if (scanner.hasNextInt()) {
+                int number = scanner.nextInt();
+                sum += number;
+            }
+            else if (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                if (line.equalsIgnoreCase("ENTER")) {
+                    exit = true;
+                    System.out.println(sum);
+                }
+            }
         }
     }
 }
