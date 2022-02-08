@@ -1,10 +1,10 @@
-package Zero.Task07;
+package Zero.Task05;
 
 /*В методе main(String[]) тебе нужно заполнить массив strings значениями.
         Если индекс массива чётный — присвоить значение "Чётный" (ноль — цифра чётная), иначе присвоить "Нечётный".
         Вывод текста в консоль в тестировании не участвует.*/
 
-public class Solution0702 {
+public class Solution0502 {
     public static final String ODD = "Нечётный";
     public static final String EVEN = "Чётный";
     public static String[] strings = new String[5];

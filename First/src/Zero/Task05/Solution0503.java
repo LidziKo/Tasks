@@ -1,10 +1,10 @@
-package Zero.Task07;
+package Zero.Task05;
 
 /*Реализуй метод main(String[]), который меняет знак элемента массива array на противоположный, если значение этого элемента чётное.*/
 
 
 
-public class Solution0703 {
+public class Solution0503 {
     public static int[] array = new int[]{-1, 2, 3, -4, -5};
 
     public static void main(String[] args) {
