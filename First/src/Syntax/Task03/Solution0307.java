@@ -1,4 +1,4 @@
-package Zero.Task03;
+package Syntax.Task03;
 import java.util.Scanner;
 
 /*Ввести с клавиатуры строку и число number, которое больше 0 и меньше 5.

@@ -1,4 +1,4 @@
-package Zero.Task05;
+package Syntax.Task05;
 
 /*Reverse
         Тебе нужно написать программу, которая:

@@ -1,4 +1,4 @@
-package Zero.Task04;
+package Syntax.Task04;
 import java.util.Scanner;
 
 /*Ввести с клавиатуры имя и, используя цикл while, 10 раз вывести: <имя> любит меня (переменная text).

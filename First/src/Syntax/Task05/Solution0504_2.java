@@ -1,6 +1,6 @@
-package Zero.Task05;
+package Syntax.Task05;
 
-public class Solution0504part2 {
+public class Solution0504_2 {
     public static int[] firstArray = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     public static int[] secondArray = new int[]{10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
     public static int[] resultArray;

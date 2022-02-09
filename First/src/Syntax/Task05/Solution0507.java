@@ -1,4 +1,4 @@
-package Zero.Task05;
+package Syntax.Task05;
 
 /*Максимальное из N чисел
         В этой задаче тебе нужно:

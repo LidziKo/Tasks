@@ -1,4 +1,4 @@
-package Zero.Task05;
+package Syntax.Task05;
 
 /*В методе main проинициализируй переменные intArray и doubleArray массивами соответствующих типов, размер которых равен 10.*/
 

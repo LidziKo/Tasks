@@ -1,4 +1,4 @@
-package Zero.Task04;
+package Syntax.Task04;
 import java.util.Scanner;
 
 /*Вводим данные с клавиатуры и сразу их выводим на экран, пока не будет введено слово "enough".
