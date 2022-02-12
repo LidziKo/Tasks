@@ -16,6 +16,7 @@ public class Solution0623 {
                 array[i][j] = i + j + 1;
             }
         }
+        System.out.println(Arrays.deepToString(array));
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
