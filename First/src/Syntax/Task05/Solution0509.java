@@ -13,8 +13,8 @@ public class Solution0509 {
         for (int i = 1; i <= 10; i++) {
             int count = 1;
             for (int j = count; j <= 10; j++) {
-                MULTIPLICATION_TABLE[j-1][i-1] = j * i;
-                int tmp = MULTIPLICATION_TABLE[j-1][i-1];
+                MULTIPLICATION_TABLE[j - 1][i - 1] = j * i;
+                int tmp = MULTIPLICATION_TABLE[j - 1][i - 1];
                 System.out.print(tmp + " ");
             }
             System.out.println();

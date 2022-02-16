@@ -3,7 +3,6 @@ package Syntax.Task05;
 /*Реализуй метод main(String[]), который меняет знак элемента массива array на противоположный, если значение этого элемента чётное.*/
 
 
-
 public class Solution0503 {
     public static int[] array = new int[]{-1, 2, 3, -4, -5};
 

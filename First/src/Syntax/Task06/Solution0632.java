@@ -14,8 +14,7 @@ public class Solution0632 {
             for (int j = 0; j < array[0].length; j++) {
                 if ((j < (array.length - 1 - i) || (j > array[0].length - array.length + i))) {
                     array[i][j] = ' ';
-                }
-                else {
+                } else {
                     array[i][j] = '#';
                 }
             }

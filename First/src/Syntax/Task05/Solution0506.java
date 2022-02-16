@@ -1,4 +1,5 @@
 package Syntax.Task05;
+
 import java.util.Scanner;
 
 /*Минимальное из N чисел

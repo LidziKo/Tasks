@@ -13,8 +13,7 @@ public class Solution0502 {
         for (int i = 0; i < strings.length; i++) {
             if (i % 2 == 0) {
                 strings[i] = EVEN;
-            }
-            else {
+            } else {
                 strings[i] = ODD;
             }
         }

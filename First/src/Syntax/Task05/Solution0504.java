@@ -1,4 +1,5 @@
 package Syntax.Task05;
+
 import java.util.Arrays;
 
 /*Реализовать метод main(String[]), в котором нужно скопировать содержимое массивов firstArray и secondArray в один массив resultArray.
