@@ -9,8 +9,7 @@ package Syntax.Task06;
         true, если массивы одинаковы и false, если они разные.*/
 
 import java.io.IOException;
-import java.util.OptionalInt;
-import java.util.Random;
+import java.util.*;
 
 public class Solution0635 {
     public static String[][] expectedArray = new String[3][3];
@@ -27,7 +26,27 @@ public class Solution0635 {
     }
 
     public static void main(String[] args) throws IOException {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < actualArray.length; i++) {
+            for (int j = 0; j < actualArray[0].length; j++) {
+                String val = scanner.nextLine();
+                if (val.equals("")) {
+                    actualArray[i][j] = " ";
+                } else {
+                    actualArray[i][j] = "#";
+                }
+            }
+        }
+
+        if (Arrays.deepEquals(actualArray, expectedArray)) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
     }
+
 }
+
+
 
