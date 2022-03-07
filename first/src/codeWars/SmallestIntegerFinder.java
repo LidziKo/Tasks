@@ -4,9 +4,10 @@ package codeWars;
 
 public class SmallestIntegerFinder {
     public static void main(String[] args) {
-        int[] array = new int[] {1, -233, -45, 34, 0, 19};
+        int[] array = new int[]{1, -233, -45, 34, 0, 19};
         System.out.println(findSmallestInt(array));
     }
+
     public static int findSmallestInt(int[] args) {
         int min = args[0];
 
