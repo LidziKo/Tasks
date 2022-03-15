@@ -1,12 +1,15 @@
-package com.javarush.task.pro.task12.task1210;
+package syntax.task12;
 
 import java.util.ArrayList;
 
 /* 
-Переворачивание данных
+Requirements:
+1. Поле numbers должно быть типа ArrayList<Integer>.
+2. Метод init() должен заполнять список numbers числами от 0 до 9.
+3. Метод reverse() должен переставить значения списка numbers в обратном порядке.
 */
 
-public class Solution {
+public class Solution1210 {
     public static ArrayList<Integer> numbers = new ArrayList<>();
 
     public static void main(String[] args) {
