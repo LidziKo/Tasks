@@ -10,7 +10,7 @@ public class Solution {
         for (int i = 0; i < 10; i++) {
             queue.offer("элемент " + i);
         }
-        System.out.println("длина очереди: " + queue.size());
+        System.out.println("длина очереди:  " + queue.size());
 
         System.out.println("*** iterator ***");
         for (Object o : queue) {

@@ -1,9 +1,10 @@
-package com.javarush.task.pro.task13.task1326;
+package syntax.task13.task1326;
 
 import java.util.AbstractQueue;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+//
 
 public class MyQueue extends AbstractQueue<String> {
 
