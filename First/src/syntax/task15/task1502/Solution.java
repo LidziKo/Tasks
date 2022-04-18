@@ -1,4 +1,4 @@
-package task15.task1502;
+package syntax.task15.task1502;
 
 import java.util.Scanner;
 

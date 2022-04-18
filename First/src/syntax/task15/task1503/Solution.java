@@ -1,4 +1,4 @@
-package task15.task1503;
+package syntax.task15.task1503;
 
 import java.io.BufferedReader;
 import java.io.IOException;

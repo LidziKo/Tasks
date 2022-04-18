@@ -1,4 +1,4 @@
-package task15.task1524;
+package syntax.task15.task1524;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
