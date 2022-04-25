@@ -3,6 +3,8 @@ package lessons;
 import java.math.BigInteger;
 import java.util.Arrays;
 
+//(a*c)+(b*d); |(a*d)-(c*b)|
+
 public class Cube {
     public static void main(String[] args) {
         int[] array = {2, 1, 3, 4};
